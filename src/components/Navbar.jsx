@@ -16,12 +16,16 @@ const NavBarApp = () => {
   return (
     <div className='flex justify-between bg-gray-200 w-full p-4'>
       <h1 className='text-center text-2xl font-bold'>
-        Books Masb
+        <Link to="/" >
+         Books Masb
+        </Link>
       </h1>
       {user?.displayName ? (
         <>
-       <p>{user?.displayName}</p>
-        <button onClick={handleSignOut}>Logout</button>
+        <button onClick={handleSignOut}>
+        <p>{user?.displayName}</p>
+        Logout
+        </button>
         </>
       ) : (
         <Link to='/signin'>Sign in</Link>
