@@ -7,12 +7,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "YOUR FIREBASE API KEY",
-  authDomain: "YOUR FIREBASE AUTHDOMAIN",
-  projectId: "YOUR FIREBASE PROJECTID",
-  storageBucket: "YOUR FIREBASE STORAGE BUCKET",
-  messagingSenderId: "YOUR FIREBASE MESSAGESENDER ID",
-  appId: "YOUR FIREBASE APPID"
+  apiKey: "AIzaSyAOpCbVGCTOUBEO-tweK53z8WEVt6MfKr4",
+  authDomain: "book-masb.firebaseapp.com",
+  projectId: "book-masb",
+  storageBucket: "book-masb.appspot.com",
+  messagingSenderId: "1051596862172",
+  appId: "1:1051596862172:web:433da6afc2ce102dedba19"
 };
 
 // Initialize Firebase

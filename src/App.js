@@ -6,15 +6,21 @@ import { AuthContextProvider } from './context/AuthContext';
 import Account from './pages/Account';
 import Home from './pages/Home';
 import Signin from './pages/Signin';
+import NavBarApp from './components/Navbar';
+import { AppProvider } from './context.';
+import BookDetails from './components/BookDetails/BookDetails';
 
 function App() {
   return (
     <div>
       <AuthContextProvider>
-        <Navbar />
+        <AppProvider>
+        <NavBarApp />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/signin' element={<Signin />} />
+          <Route path = "/book/:id" element = {<BookDetails />} />
+
           <Route
             path='/account'
             element={
@@ -24,6 +30,7 @@ function App() {
             }
           />
         </Routes>
+        </AppProvider>
       </AuthContextProvider>
     </div>
   );
