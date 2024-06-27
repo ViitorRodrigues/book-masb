@@ -24,9 +24,7 @@ function App() {
           <Route
             path='/book'
             element={
-              <Protected>
                 <Account />
-              </Protected>
             }
           />
         </Routes>

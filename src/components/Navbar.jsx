@@ -20,16 +20,6 @@ const NavBarApp = () => {
          Books Masb
         </Link>
       </h1>
-      {user?.displayName ? (
-        <>
-        <button onClick={handleSignOut}>
-        <p>{user?.displayName}</p>
-        Logout
-        </button>
-        </>
-      ) : (
-        <Link to='/signin'>Sign in</Link>
-      )}
     </div>
   );
 };
