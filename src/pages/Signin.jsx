@@ -4,6 +4,7 @@ import { UserAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
 const Signin = () => {
+ 
   const { googleSignIn, user } = UserAuth();
   const navigate = useNavigate();
 
@@ -16,11 +17,11 @@ const Signin = () => {
   };
 
   useEffect(() => {
-    if (user) {
+    if (user != null) {
       navigate('/account');
     }
   }, [user]);
-
+  
   return (
     <div>
   <div className="relative flex h-full w-full">
