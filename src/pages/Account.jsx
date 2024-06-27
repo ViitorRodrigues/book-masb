@@ -9,6 +9,7 @@ const Account = () => {
    <>
     <div className='w-[300px] m-auto'>
     </div>
+    <SearchForm />
     <BookList />
    </>
   );
