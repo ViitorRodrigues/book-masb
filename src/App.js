@@ -22,7 +22,7 @@ function App() {
           <Route path = "/book/:id" element = {<BookDetails />} />
 
           <Route
-            path='/account'
+            path='/book'
             element={
               <Protected>
                 <Account />

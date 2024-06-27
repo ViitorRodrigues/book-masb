@@ -5,22 +5,17 @@ import { useNavigate } from 'react-router-dom';
 
 const Signin = () => {
  
-  const { googleSignIn, user } = UserAuth();
+  const { googleSignIn } = UserAuth();
   const navigate = useNavigate();
 
   const handleGoogleSignIn = async () => {
     try {
       await googleSignIn();
+      navigate('/book');
     } catch (error) {
       console.log(error);
     }
   };
-
-  useEffect(() => {
-    if (user != null) {
-      navigate('/account');
-    }
-  }, [user]);
   
   return (
     <div>
