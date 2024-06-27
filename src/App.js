@@ -24,9 +24,7 @@ function App() {
           <Route
             path='/account'
             element={
-              <Protected>
-                <Account />
-              </Protected>
+              <Account />
             }
           />
         </Routes>
